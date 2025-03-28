@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"> </script>
+        <script>
+            // $(document).ready(function(){
+            //     // $("button").click(function(){
+            //     //     alert('Harshini');
+            //     //     $("p").toggle();
+            //     // })
+            //     // $("button").mouseover(function(){
+            //     //     alert('mouseover');
+            //     // })
+            //     // $("button").mousedown(function(){
+            //     //     alert('mousedown');
+            //     // })
+            //     // $("button").mouseup(function(){
+            //     //     alert('mouseup');
+            //     // })
+            //     // $("button").mouseenter(function(){
+            //     //     alert('mouseenter');
+            //     // })
+            //     // $("button").dblclick(function(){
+            //     //     alert('double click');
+            //     // })
+            //     $("button").click(function(){
+            //         // $("p").fadeIn();
+            //         let element = document.getElementById("sample").innerHTML="Welcome back to the webpage"
+            //         let element2 = element.getElementsByTagName("p")
+
+            //     })
+            // })
+            // function validateForm(){
+            //     let formvalue= document.forms["myForm"]["lname"].value;
+            //     if (formvalue=" ") {
+            //         alert("Requried lname field");
+            //         return false;  
+            //     }
+            // }
+            // let fname = 'Harshini';
+            // let lname = 'venky';
+            // let age = prompt("Enter the age..");
+            // let result =`${fname} ${lname} is ${age}`;
+            // alert(result);
+
+            // function welcome(user='Harsh',message='Good day'){                   //default parameter
+            //     alert(`Hello ${user}, ${message}`);
+            // }
+            // welcome();
+            // Arrow function and this keyword
+            let objVar = {
+                name:['Harshini','Gowtham','Ismail','Siva'],
+                printObj: function(){
+                    console.log("from inner function", this);
+                    // setTimeout(function()  {
+                        // console.log("from setinterval", this);       //without arrow function has window a
+                    // }, 3000);
+                }
+            }
+            objVar.printObj();
+        </script>
+    </head>
+    <body>
+        <h2> Welcome to our page</h2>
+        <p id="sample">
+            Sample for viewing
+        </p>
+        <button>you can hide me by clicking</button>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <table>
+                <tr>
+                <td>Name: </td>
+                <td> <input type="text" name="fname" max="10" required></td>
+            </tr>
+            <tr>
+                <td>Lastname: </td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+            </table>
+          </form>
+    </body>
+</html>
