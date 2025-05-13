@@ -1,5 +1,5 @@
 var myObj = { "name":"John", "age":31, "city":"New York" };
-var arrObj = ["Harsh", "Gowzz","Siva","Ismail","Yamuna"];
+var arrObj = ["Harsh", "Gowzz","Siva","Arun","Yamuna"];
 var myJSON = JSON.stringify(myObj);
 
 // console.log(typeof myJSON)
@@ -144,7 +144,7 @@ var myJSON = JSON.stringify(myObj);
 //         gender:'Male',
 //     },
 //     {
-//         name:'ismail',
+//         name:'Arun',
 //         gender:'Male',
 //     },
 //     {
@@ -159,7 +159,7 @@ var myJSON = JSON.stringify(myObj);
 //     {fname:'Harshini', age:'23'},
 //     {fname:'Gowtham',age:'23'},
 //     {fname:'siva',age:'22'},
-//     {fname:'ismail',age:'24'}
+//     {fname:'Arun',age:'24'}
 // ]
  
 // var filteryoung = filterObj.filter((filterObj)=> {
